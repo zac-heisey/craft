@@ -32,3 +32,17 @@
 - Templates output content and HTML (via [Twig](https://docs.craftcms.com/v3/dev/twig-primer.html#app))
 
 - Templates are stored inside the `/templates` directory, and can be organized in sub-directories as necessary
+
+
+**Assets:**
+- Manage files in Craft using Assets manager
+
+- Only stores references to files on disk
+
+- Allows for easy access to files in control panel and in templates
+
+- Two ways to manage asset files in Craft 3:
+  1. Local - Stored right on disk of server
+  2. Remote - Stored in 3rd party cloud service (AWS S3, Google Cloud, Rackspace Cloud)
+
+- Files are stored and organized in Asset Volumes, which are created under `Settings > Assets > Volumes`

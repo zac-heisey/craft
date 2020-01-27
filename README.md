@@ -3,6 +3,7 @@
 ## Content Organization in Craft
 
 **Sections**
+
 - How content or data is organized in Craft
 
 - News articles, set of docs, website pages
@@ -21,6 +22,7 @@
 - Review categories of existing content and determine how they should be represented by Sections
 
 **Fields & Field Types**
+
 - Fields help organize content into smaller pieces (e.g. A 'News Articles' Section might include Fields like 'Headline', 'Article Excerpt', 'Article Image', 'Article Body Copy', etc.
 
 - Field Types define what type of content can be stored in a Field (e.g. A 'Headline' Field would have a Field Type of 'Title Field', 'Article Excerpt' would be a 'Plain Text Field', etc. (Craft comes with multiple Field Types)
@@ -39,6 +41,7 @@
   2. Max Blocks - The maximum number of blocks that can be created within the Matrix field (unlimited by default)
 
 **Entries & Templates**
+
 - Each piece of content in Craft is stored as an Entry (e.g. a single news article in a 'News' Section, a blog post, an employee bio, etc.)
 
 - Entries can be displayed as a Listing (set of Entries with links to each single Entry) or a Single Entry (the full Entry at a unique URL)
@@ -48,6 +51,7 @@
 - Templates are stored inside the `/templates` directory, and can be organized in sub-directories as necessary
 
 **Assets**
+
 - Manage files in Craft using Assets manager
 
 - Only stores references to files on disk

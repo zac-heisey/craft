@@ -4,9 +4,9 @@
 
 **Sections**
 
-- How content or data is organized in Craft
+- Sections are how content or data is organized in Craft
 
-- News articles, set of docs, website pages
+- Examples of Sections might be: News articles, set of docs, website pages, etc.
 
 - 3 Section types in Craft:
 
@@ -48,7 +48,7 @@
 
 - Templates output content and HTML (via [Twig](https://docs.craftcms.com/v3/dev/twig-primer.html#app))
 
-- Templates are stored inside the `/templates` directory, and can be organized in sub-directories as necessary
+- Templates are stored inside the `/templates` directory, and can be organized in sub-directories as necessary. Template are not accessible via the control panel, and are not stored in the database
 
 **Assets**
 
@@ -63,3 +63,5 @@
   2. Remote - Stored in 3rd party cloud service (AWS S3, Google Cloud, Rackspace Cloud)
 
 - Files are stored and organized in Asset Volumes, which are created under `Settings > Assets > Volumes`
+
+## Twig Templates in Craft

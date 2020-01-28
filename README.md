@@ -76,3 +76,15 @@
   - Logic Tags: `{% %}`
   - Output Tags: `{{ }}`
   - Comment Tags: `{# #}`
+
+- Twig enables template sharing via:
+
+  - Inheriting templates using the `extends` tag
+    - Allows for a base template to be used and added to other "child" templates (e.g. `{% extends _layouts/base %}`)
+    - Great for site-wide wrapper templating that contains reusable code (e.g. a generic, universal template that is extended to all other templates)
+  - Including templates using the `include` tag
+    - Allows entire rendered template to be pulled into another template (e.g. `{% include _includes/footer %}`)
+    - Great for sidebar, header, and footer templates
+  - Embedding templates using the `embed` tag
+    - Offers a hybrid of the `extends` and  `include` tags
+    - Allows entire template to be included AND for parts of the included template to be overridden using blocks (e.g. `{% embed '_embed/social' %}`)

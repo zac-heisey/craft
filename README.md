@@ -59,9 +59,20 @@
 - Allows for easy access to files in control panel and in templates
 
 - Two ways to manage asset files in Craft 3:
+
   1. Local - Stored right on disk of server
   2. Remote - Stored in 3rd party cloud service (AWS S3, Google Cloud, Rackspace Cloud)
 
 - Files are stored and organized in Asset Volumes, which are created under `Settings > Assets > Volumes`
 
 ## Twig Templates in Craft
+
+- [Twig](https://twig.symfony.com/) is a PHP templating engine that compiles tags into standard PHP
+
+- Twig is customizable, extensible, and programmatic, making it a powerful templating layer over web applications like Craft
+
+- Three [types of Twig tags](https://docs.craftcms.com/v3/dev/twig-primer.html#three-types-of-twig-tags):
+
+  - Logic Tags: `{% %}`
+  - Output Tags: `{{ }}`
+  - Comment Tags: `{# #}`

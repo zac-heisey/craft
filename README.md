@@ -19,6 +19,7 @@
     - One-off entry with no sibling content that is meant to stand on its own (e.g. homepage, single internal pages, etc.).
     - Typically have unique content & layout requirements that are not shared with other entries.
 
+
 - Review categories of existing content and determine how they should be represented by Sections
 
 **Fields & Field Types**
@@ -63,6 +64,7 @@
   1. Local - Stored right on disk of server
   2. Remote - Stored in 3rd party cloud service (AWS S3, Google Cloud, Rackspace Cloud)
 
+
 - Files are stored and organized in Asset Volumes, which are created under `Settings > Assets > Volumes`
 
 ## Twig Templates in Craft
@@ -73,9 +75,10 @@
 
 - Three [types of Twig tags](https://docs.craftcms.com/v3/dev/twig-primer.html#three-types-of-twig-tags):
 
-  - Logic Tags: `{% %}`
-  - Output Tags: `{{ }}`
-  - Comment Tags: `{# #}`
+  1. Logic Tags: `{% %}`
+  2. Output Tags: `{{ }}`
+  3. Comment Tags: `{# #}`
+
 
 - Twig enables template sharing via:
 
@@ -88,3 +91,18 @@
   - Embedding templates using the `embed` tag
     - Offers a hybrid of the `extends` and  `include` tags
     - Allows entire template to be included AND for parts of the included template to be overridden using blocks (e.g. `{% embed '_embed/social' %}`)
+
+
+- Twig [Filters](https://docs.craftcms.com/v3/dev/twig-primer.html#filters) allow for the altering of variable content directly in an output tag (e.g. `{{ variableString | title }}` would return a titlecased version of the variable string being referenced)
+
+- Filters are stackable (e.g. `{{ variableString | trim | title }}`)
+
+- [Macros](https://twig.symfony.com/doc/3.x/tags/macro.html) are a type of logic tag that is essentially Twig's version of functions. They are used to generate something such as often-used markup with slight variations (e.g. `{% macro macroName(param1, param2) %} {{# contents/output of macro #}} {% endmacro %}`)
+
+**Navigation and Pagination Tags**
+
+- The [navigation tag](https://docs.craftcms.com/v3/dev/tags/nav.html) creates hierarchical navigation for Structure sections or Category Groups (e.g. `{% nav  %}`)
+
+- The [pagination tag](https://docs.craftcms.com/v3/dev/tags/paginate.html) provides pagination functionality for entries across multiple pages
+
+- Both `nav` and `paginate` are Craft-specific tags
